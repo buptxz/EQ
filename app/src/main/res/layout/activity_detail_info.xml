@@ -1,0 +1,137 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width= "match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:src="@drawable/profilebg"
+        android:gravity="center_horizontal"
+        android:id="@+id/event_image"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/event_time"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/event_address"
+
+        android:gravity="center_horizontal"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/event_holder"
+        android:gravity="center_horizontal"
+        android:textSize="18dp"
+        />
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/event_time"-->
+        <!--android:id="@+id/evnet_name_scroll">-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/event_name"
+            android:maxLines="3"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            />
+    <!--</ScrollView>-->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+
+
+                android:id="@+id/evnet_description_scroll">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/event_description"
+                    android:gravity="center_horizontal"
+
+                    android:textSize="12dp"/>
+            </ScrollView>
+
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        map:cameraZoom="13"
+        android:gravity="center_horizontal"
+        tools:context="com.example.peng.eq.DetailInfoActivity" />
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/back">
+
+        <Button
+            android:text="GOING"
+            android:id="@+id/attend_event"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:visibility="visible"
+            android:background="@drawable/mybuttonstyle"
+            android:onClick="attend">
+        </Button>
+        <Button
+            android:text="not going"
+            android:id="@+id/cancel_event"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:background="@drawable/mybuttonstyle"
+            android:onClick="cancel">
+        </Button>
+
+        <Button
+            android:text="edit"
+            android:id="@+id/edit_event"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:background="@drawable/mybuttonstyle"
+            android:onClick="editEvent">
+        </Button>
+
+        <TextView
+            android:id="@+id/event_attendees"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/attend_event"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:text="">
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

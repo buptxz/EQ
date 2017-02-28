@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/map"
+        android:id="@+id/toolbar"
+        android:minHeight="0dp"
+        android:minWidth="20dip"
+        android:paddingRight="0dip"
+        android:paddingLeft="0dip"
+        />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone">
+
+        <Button
+            android:text="Mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:background="@drawable/red"
+            android:onClick="button1"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Tue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:background="@drawable/orange"
+            android:onClick="button2"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Wed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yellow"
+            android:id="@+id/button3"
+            android:onClick="button3"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green"
+            android:id="@+id/button4"
+            android:onClick="button4"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cyan"
+            android:id="@+id/button5"
+            android:onClick="button5"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue"
+            android:id="@+id/button6"
+            android:onClick="button6"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/violet"
+            android:id="@+id/button7"
+            android:onClick="button7"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:cameraZoom="13"
+        tools:context="com.example.peng.mapv11.MapsActivity" />
+</LinearLayout>

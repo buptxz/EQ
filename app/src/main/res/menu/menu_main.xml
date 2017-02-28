@@ -1,0 +1,43 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+
+<!--    <item android:id="@+id/mon"
+        android:title="@string/title_add_event"
+        android:icon="@drawable/plus"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/tue"
+        android:title="@string/title_add_event"
+        android:icon="@drawable/plus"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/wen"
+
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/thu"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>-->
+
+    <item android:id="@+id/calender"
+        android:title="calender"
+        android:icon="@drawable/weekdayselector"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/add_event"
+        android:title="@string/title_add_event"
+        android:icon="@drawable/plus"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/all"
+        android:title="all" />
+
+
+
+</menu>
+
